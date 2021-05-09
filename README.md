@@ -1,2 +1,2 @@
 # koupy
-Site de vagas para desenvolvedores Python juniors
+API do site de vagas para desenvolvedores Python juniors
