@@ -21,7 +21,7 @@ class CathoController extends Controller
                 'url',
                 'title',
                 'pay_scale',
-                'updated_at',
+                'job_updated_at',
                 'description'
             ];
 

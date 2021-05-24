@@ -1,9 +1,10 @@
 <?php
 
-use App\Http\Controllers\CathoController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\CathoController;
+use App\Http\Controllers\ProgramathorController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,5 +25,11 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::prefix('catho')->group(function () {
     
     Route::get('/list-jobs', [CathoController::class, 'getJobs']);
+
+});
+
+Route::prefix('programathor')->group(function () {
+
+    Route::get('/list-jobs', [ProgramathorController::class, 'getJobs']);
 
 });
