@@ -12,6 +12,12 @@
 
 Kouhai é uma API Rest que fará a integração de sites como o Indeed, Glassdoor, Programathor e etc. visando unificar links de vagas de diversos portais para desenvolvedores PHP júniors, economizando o tempo de abrir várias abas em vários sites de vagas, tendo assim todo o catálogo de vagas num só lugar. 
 
+## Requisitos
+
+* PHP 7.4+
+* Composer
+* Laravel 8 
+
 ## Recursos
 
 ### Catho
