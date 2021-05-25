@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\CathoController;
+use App\Http\Controllers\JobsController;
 use App\Http\Controllers\ProgramathorController;
 
 /*
@@ -31,5 +32,11 @@ Route::prefix('catho')->group(function () {
 Route::prefix('programathor')->group(function () {
 
     Route::get('/list-jobs', [ProgramathorController::class, 'getJobs']);
+
+});
+
+Route::prefix('jobs')->group(function () {
+
+    Route::get('/list-all-jobs', [JobsController::class, 'listAll']);
 
 });

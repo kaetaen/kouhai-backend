@@ -44,10 +44,8 @@ class ProgramathorController extends Controller
 
             $data = $urls;
 
-            //$data = $content;
-            //\Log::info(print_r($data, true));
-        
-            return response()->json([$data, 200]);
+       
+            return response()->json(["data" => $data, 200]);
         
         } catch (\Exception $ex) {
             return response()->json(["Error" => $ex->getMessage()]);
