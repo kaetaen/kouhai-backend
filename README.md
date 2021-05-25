@@ -63,7 +63,7 @@ Lista as vagas do portal [Programathor](https://programathor.com.br/)
 
 #### Endpoint
 ```http
-GET api/programathor/list-jobs
+GET /api/programathor/list-jobs
 Content-type: application/json
 ```
 #### Retorno
@@ -108,5 +108,54 @@ Content-type: application/json
       ]
     }
   ]
+}
+```
+
+### Listando todas as vagas
+
+#### Descrição
+
+Lista todas as vagas de todas as fontes disponíveis na API
+
+#### Endpoint
+```http
+GET /api/jobs/list-all-jobs
+Content-type: application/json
+```
+#### Retorno
+```json
+{
+  "data": {
+    "catho": [
+      {
+        "url": "https://www.catho.com.br/vagas/programador-php-junior/18192636",
+        "title": "Vaga de Programador PHP Júnior",
+        "pay_scale": "De R$ 1.001,00 a R$ 2.000,00",
+        "job_updated_at": "2021-05-13T23:59:59Z",
+        "description": "Atuar em agência de Publicidade Digital, com programação PHP framework Laravel."
+      }
+    ],
+    "programathor": [
+      {
+        "title": "Desenvolvedor(a) Wordpress Full Stack",
+        "url": "https://programathor.com.br/jobs/16579-desenvolvedor-a-wordpress-full-stack",
+        "job_details": [
+          "A&M Solutions - Agência Digital",
+          "Remoto",
+          "Grande empresa",
+          "Até R$1.500",
+          "Júnior",
+          "PJ",
+          "Aceita candidatos de fora",
+          "PHP",
+          "WordPress",
+          "MySQL",
+          "CSS",
+          "JavaScript",
+          "HTML"
+        ]
+      }
+    ]
+  }
 }
 ```
